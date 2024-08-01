@@ -16,6 +16,7 @@ import Typography from '@mui/material/Typography';
 import { HomeOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 
 const drawerWidth = 240;
 
@@ -30,7 +31,12 @@ export default function ResponsiveDrawer({ children }) {
         text: 'Home',
         icon: <HomeOutlined color='secondary'/>,
         path: '/'
-    }
+    },
+    {
+      text: 'Profile',
+      icon: <SchoolOutlinedIcon color='secondary'/>,
+      path: '/profile'
+  }
 ]
 
 
